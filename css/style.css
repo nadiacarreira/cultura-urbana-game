@@ -3,9 +3,10 @@ body{
   padding: 0;
 }
 
-.content{
+#contenedorPuzzle{
   width: 1200px;
   height: 800px;
+  margin-left: 1.8%;
   background: #ffffff url("../images/mapaFinal.png") no-repeat;
 }
 
@@ -30,64 +31,52 @@ body{
 
 
 /*piezes para mover*/
-
-.pieces{
+#contenedorPiezas{
   width: 200px;
   position: absolute;
   top: 208px;
   left: 85%;
+  height: auto;
   text-align: center;
 }
-.pieces>img{
+
+#contenedorPiezas>img{
   margin-bottom: 10px;
 }
 
 /*position de las siluetas*/
-
-.silhouettes{
-  position: relative;
-}
-.silhouettes>img{
-  position: absolute;
-}
-.silhouettes .bigBen{
-  top: 450px;
-  left: 40%;
-  background:url("../images/silhouette/silhouetteBigben.png") no-repeat;
-  width: 56px;
-  height: 209px;
-  position: absolute;
-}
-
-.silhouettes .buckinham{
+#uno{
   top: 130px;
   left: 9.5%;
   width: 289px;
   height: 96px;
   position: absolute;
   background:url("../images/silhouette/silouetteBuckinham.png") no-repeat;
-
 }
-
-.silhouettes .bidge{
-  top: 350px;
-  left: 83%;
-  width: 185px;
-  height: 133px;
-  position: absolute;
-  background:url("../images/silhouette/silouettebidge.png") no-repeat;
-
-}
-
-.silhouettes .santPaul{
+#dos{
   top: 50px;
-  left: 60%;
+  left: 50%;
   position: absolute;
   width: 185px;
   height: 142px;
   background:url("../images/silhouette/silouetteSanPaul.png") no-repeat;
-
 }
+#tres{
 
+  top: 450px;
+  left: 40%;
+  background:url("../images/silhouette/silhouetteBigben.png") no-repeat;
+  width: 56px;
+  height: 209px;
+  position: absolute;
+ }
+#cuatro{
+  top: 350px;
+  left: 71%;
+  width: 185px;
+  height: 133px;
+  position: absolute;
+  background:url("../images/silhouette/silouettebidge.png") no-repeat;
+}
 
 /*tooltips de los points*/

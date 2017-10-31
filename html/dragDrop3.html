@@ -2,47 +2,53 @@
 <html>
 <head>
 <style>
+  #uno{
+    top: 130px;
+    left: 9.5%;
+    width: 289px;
+    height: 96px;
+    position: absolute;
+    background:url("../images/silhouette/silouetteBuckinham.png") no-repeat;
+  }
+  #dos{
+    top: 50px;
+    left: 60%;
+    position: absolute;
+    width: 185px;
+    height: 142px;
+    background:url("../images/silhouette/silouetteSanPaul.png") no-repeat;
+  }
+  #tres{
 
-h1 {
-  color: #CA7218;
-  text-align: center;
-}
+    top: 450px;
+    left: 40%;
+    background:url("../images/silhouette/silhouetteBigben.png") no-repeat;
+    width: 56px;
+    height: 209px;
+    position: absolute;
+   }
+  #cuatro{
+    top: 350px;
+    left: 83%;
+    width: 185px;
+    height: 133px;
+    position: absolute;
+    background:url("../images/silhouette/silouettebidge.png") no-repeat;
+  }
 
-/* Contenedor del puzzle*/
-#contenedorPuzzle {
-	width: 1220px;
-  height: 800px;
-}
+  #contenedorPiezas{
+    width: 200px;
+    position: absolute;
+    top: 208px;
+    left: 85%;
+    text-align: center;
+  }
+
+  #contenedorPiezas>img{
+    margin-bottom: 10px;
+  }
 
 
-/* Puzzle */
-
-
-
-.contenedorPieza {
-	width: 100px;
-	height: 100px;
-	float: left;
-}
-
-#contenedorPuzzle img {
-	float: left;
-	padding: 1px;
-	width: 98px;
-	height: 98px;
-}
-#uno{
-  background: url("../images/silhouette/silhouetteBigben.png");
-}
-#dos{
-  background: url("../images/silhouette/silouetteBuckinham.png");
-}
-#tres{
-  background: url("../images/silhouette/silouettebidge.png");
-}
-#cuatro{
-  background: url("../images/silhouette/silouetteSanPaul.png");
-}
 
 
 </style>
@@ -98,7 +104,7 @@ if((document.getElementById('pieza1').parentNode.id=='uno') &&
   (document.getElementById('pieza3').parentNode.id=='tres') &&
   (document.getElementById('pieza4').parentNode.id=='cuatro'))
 {
-  alert('Felicidades, has hecho el puzzle.');
+  alert('¡¡¡Bieeen!!! lo has conseguido.');
 }
 }
 
@@ -116,7 +122,7 @@ if(
 }
 </script>
 </head>
-<body onload="comprobarnavegador();">
+  <body onload="comprobarnavegador();">
 	<header>
 		<h1> Un puzzle de cuatro piezas </h1>
 	</header>
@@ -129,11 +135,12 @@ if(
 			<img id="pieza1" src="../images/pieces/buckinham.png" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
 		</div>
 		<div id="puzzle">
-      <div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			<div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
 			<div class="contenedorPieza" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
 			<div class="contenedorPieza" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
 			<div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
 		</div>
 	</section>
+</body>
 </body>
 </html>
