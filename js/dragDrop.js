@@ -27,7 +27,7 @@ return true;
 * Devuelve false si el objeto se puede soltar en ese elemento y true en caso contrario.
 **/
 function over(e) {
-if ((e.target.className == "contenedorPieza") || (e.target.id == "contenedorPiezas"))
+if ((e.target.className == "containerPiece") || (e.target.id == "containerPieces"))
   return false;
 else
 return true;
@@ -38,16 +38,16 @@ return true;
 **/
 function drop(e){
 e.preventDefault(); // Evita que se ejecute la accion por defecto del elemento soltado.
-var elementoArrastrado = e.dataTransfer.getData("Text");
-e.target.appendChild(document.getElementById(elementoArrastrado)); // Coloca el elemento soltado sobre el elemento desde el que se llamo esta funcion
+var dragableElemet = e.dataTransfer.getData("Text");
+e.target.appendChild(document.getElementById(dragableElemet)); // Coloca el elemento soltado sobre el elemento desde el que se llamo esta funcion
 comprobarPuzzle();
 }
 
-function comprobarPuzzle(){
-if((document.getElementById('pieza1').parentNode.id=='uno') &&
-  (document.getElementById('pieza2').parentNode.id=='dos') &&
-  (document.getElementById('pieza3').parentNode.id=='tres') &&
-  (document.getElementById('pieza4').parentNode.id=='cuatro'))
+function CheckPuzzle(){
+if((document.getElementById('bridge').parentNode.id=='one') &&
+  (document.getElementById('bigBen').parentNode.id=='two') &&
+  (document.getElementById('buckinham').parentNode.id=='three') &&
+  (document.getElementById('santPaul').parentNode.id=='four'))
 {
   alert('¡¡¡Bieeen!!! lo has conseguido.');
 }
@@ -62,7 +62,7 @@ function checkCorrectPiece (){
 /**
 * Muestra un mensaje de advertencia si el navegador no soporta Drag & Drop. (En Windows no lo soportan ni IE ni Safari)
 **/
-function comprobarnavegador() {
+function checkNavegator() {
 if(
   (navigator.userAgent.toLowerCase().indexOf('msie ') > -1) ||
   ((navigator.userAgent.toLowerCase().indexOf('safari') > -1) && (navigator.userAgent.toLowerCase().indexOf('chrome') == -1)))

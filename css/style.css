@@ -3,14 +3,14 @@ body{
   padding: 0;
 }
 
-#contenedorPuzzle{
+#containerPuzzle{
   width: 1200px;
   height: 800px;
-  margin-left: 1.8%;
-  background: #ffffff url("../images/mapaFinal.png") no-repeat;
+  margin: 0;
+  background: #ffffff url("../images/background/finalMap.png") no-repeat;
 }
 
-/*menu lateral: button start, tiempo y score*/
+/*score, time and menu*/
 .columnGame{
   float: right;
   text-align: center;
@@ -21,7 +21,7 @@ body{
   text-align: center;
   background: white;
 }
-#timmerDown{
+#number{
   font-size: 2em;
 }
 .btn-success{
@@ -30,8 +30,9 @@ body{
 
 
 
-/*piezes para mover*/
-#contenedorPiezas{
+/*pieces to move*/
+
+#containerPieces{
   width: 200px;
   position: absolute;
   top: 208px;
@@ -40,28 +41,29 @@ body{
   text-align: center;
 }
 
-#contenedorPiezas>img{
+#containerPieces>img{
   margin-bottom: 10px;
 }
 
-/*position de las siluetas*/
-#uno{
+/*position of silhouettes*/
+
+#one{
   top: 130px;
-  left: 9.5%;
+  left: 8%;
   width: 289px;
   height: 96px;
   position: absolute;
   background:url("../images/silhouette/silouetteBuckinham.png") no-repeat;
 }
-#dos{
-  top: 50px;
+#two{
+  top: 150px;
   left: 50%;
   position: absolute;
   width: 185px;
   height: 142px;
   background:url("../images/silhouette/silouetteSanPaul.png") no-repeat;
 }
-#tres{
+#three{
 
   top: 450px;
   left: 40%;
@@ -70,39 +72,26 @@ body{
   height: 209px;
   position: absolute;
  }
-#cuatro{
+#four{
   top: 350px;
-  left: 71%;
+  left: 70%;
   width: 185px;
   height: 133px;
   position: absolute;
   background:url("../images/silhouette/silouettebidge.png") no-repeat;
 }
-/*position de los points*/
 
-.bigBen{
-  position: absolute;
-  width: 80px;
-  height: 100px;
-}
-
-/*tooltips de los points*/
-
-
-.tooltip {
-    position: relative;
+/*tooltips and points*/
+.points {
+    position: absolute;
+    top: 430px;
+    left: 45%;
     display: inline-block;
-    border-bottom: 1px dotted black;
 }
-
-.tooltip .tooltiptext {
+.points .pointstext, .points1 .pointstext, .points2 .pointstext, .points3 .pointstext {
     visibility: hidden;
-    width: 120px;
+    width: 100px;
     background-color:transparent;;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
     position: absolute;
     z-index: 1;
     bottom: 125%;
@@ -111,19 +100,25 @@ body{
     opacity: 0;
     transition: opacity 1s;
 }
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
+.points:hover .pointstext, .points1:hover .pointstext, .points2:hover .pointstext, .points3:hover .pointstext {
     visibility: visible;
     opacity: 1;
+}
+.points1{
+  position: absolute;
+  top: 180px;
+  left: 5%;
+  display: inline-block;
+}
+.points2{
+  position: absolute;
+  top: 350px;
+  left: 65%;
+  display: inline-block;
+}
+.points3{
+  position: absolute;
+  top: 190px;
+  left: 45%;
+  display: inline-block;
 }
