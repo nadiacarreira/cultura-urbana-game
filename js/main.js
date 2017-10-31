@@ -5,6 +5,7 @@ window.onload = function() {
   document.getElementById("start-button").onclick = function() {
     startGame();
   };
+}
 function startGame(){
   var silhouette = new silhouette();
   var piezes = new piezes();

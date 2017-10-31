@@ -6,7 +6,9 @@
   </head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
-
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="../js/dragDop.js"></script>
+  <!-- <script src="../js/main.js"></script> -->
 
   <body>
     <section class="col-md-2 columnGame">
@@ -27,23 +29,21 @@
 
       </section>
 
-      <section id="contenedorPuzzle">
-    		<div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
-    			<img id="pieza3" src="../images/pieces/bigBen.png" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    			<img id="pieza2" src="../images/pieces/sanPaul.png" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    			<img id="pieza4" src="../images/pieces/bridge.png" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    			<img id="pieza1" src="../images/pieces/buckinham.png" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    		</div>
-    		<div id="puzzle">
-    			<div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-    			<div class="contenedorPieza" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-    			<div class="contenedorPieza" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-    			<div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-    		</div>
-    	</section>
+      	<section id="contenedorPuzzle">
+      		<div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+      			<img id="pieza3" src="../images/pieces/bigBen.png" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      			<img id="pieza2" src="../images/pieces/sanPaul.png" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      			<img id="pieza4" src="../images/pieces/bridge.png" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      			<img id="pieza1" src="../images/pieces/buckinham.png" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      		</div>
+      		<div id="puzzle">
+      			<div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      			<div class="contenedorPieza" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      			<div class="contenedorPieza" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      			<div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      		</div>
+      	</section>
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="../js/gamePiece.js"></script>
-<script src="../js/main.js"></script>
+
   </body>
 </html>

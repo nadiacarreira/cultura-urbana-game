@@ -28,7 +28,7 @@ return true;
 **/
 function over(e) {
 if ((e.target.className == "contenedorPieza") || (e.target.id == "contenedorPiezas"))
-return false;
+  return false;
 else
 return true;
 }
@@ -45,11 +45,11 @@ comprobarPuzzle();
 
 function comprobarPuzzle(){
 if((document.getElementById('pieza1').parentNode.id=='uno') &&
-(document.getElementById('pieza2').parentNode.id=='dos') &&
-(document.getElementById('pieza3').parentNode.id=='tres') &&
-(document.getElementById('pieza4').parentNode.id=='cuatro'))
+  (document.getElementById('pieza2').parentNode.id=='dos') &&
+  (document.getElementById('pieza3').parentNode.id=='tres') &&
+  (document.getElementById('pieza4').parentNode.id=='cuatro'))
 {
-alert('Felicidades, has hecho el puzzle.');
+  alert('¡¡¡Bieeen!!! lo has conseguido.');
 }
 }
 
@@ -58,10 +58,10 @@ alert('Felicidades, has hecho el puzzle.');
 **/
 function comprobarnavegador() {
 if(
-(navigator.userAgent.toLowerCase().indexOf('msie ') > -1) ||
-((navigator.userAgent.toLowerCase().indexOf('safari') > -1) && (navigator.userAgent.toLowerCase().indexOf('chrome') == -1)))
+  (navigator.userAgent.toLowerCase().indexOf('msie ') > -1) ||
+  ((navigator.userAgent.toLowerCase().indexOf('safari') > -1) && (navigator.userAgent.toLowerCase().indexOf('chrome') == -1)))
 {
-alert("Tu navegador no soporta correctamente las funciones Drag & Drop de HTML5. Prueba con otro navegador.");
+  alert("Tu navegador no soporta correctamente las funciones Drag & Drop de HTML5. Prueba con otro navegador.");
 }
 
 }
