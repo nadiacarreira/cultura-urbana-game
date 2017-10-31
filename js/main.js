@@ -1,6 +1,3 @@
-var myPieces = ["bingBen","palacioBuckinham","hydePark","torreDeLondres","puenteDeLaTorre"];
-var player;
-var myGameArea;
 window.onload = function() {
   document.getElementById("start-button").onclick = function() {
     startGame();

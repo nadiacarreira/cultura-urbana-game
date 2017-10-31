@@ -53,6 +53,12 @@ if((document.getElementById('pieza1').parentNode.id=='uno') &&
 }
 }
 
+function checkCorrectPiece (){
+  if(document.getElementById('pieza1')==='uno'){
+
+  }
+}
+
 /**
 * Muestra un mensaje de advertencia si el navegador no soporta Drag & Drop. (En Windows no lo soportan ni IE ni Safari)
 **/

@@ -24,23 +24,25 @@
           </article>
 
         <article class="start">
-          <span id="time"></span><button type="button" class="btn btn-success">Start Game</button>
+          <span id="time"></span><button id="start-button" type="button" class="btn btn-success">Start Game</button>
         </article>
 
       </section>
-
+      <div class="tooltip"><img class="bigBen" src="../images/infoMonument/points.png" alt="Point">
+        <span class="tooltiptext"><img src="../images/infoMonument/tooltipBigBen.png" alt="Big Ben"></span>
+      </div>
       	<section id="contenedorPuzzle">
       		<div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
-      			<img id="pieza3" src="../images/pieces/bigBen.png" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-      			<img id="pieza2" src="../images/pieces/sanPaul.png" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-      			<img id="pieza4" src="../images/pieces/bridge.png" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-      			<img id="pieza1" src="../images/pieces/buckinham.png" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      			<img id="pieza3" class="pieza1" src="../images/pieces/bigBen.png" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      			<img id="pieza2" class="pieza2" src="../images/pieces/sanPaul.png" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      			<img id="pieza4" class="pieza3" src="../images/pieces/bridge.png" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      			<img id="pieza1" class="pieza4" src="../images/pieces/buckinham.png" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
       		</div>
       		<div id="puzzle">
-      			<div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-      			<div class="contenedorPieza" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-      			<div class="contenedorPieza" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-      			<div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      			<div class="contenedorPieza" class="pieza3" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      			<div class="contenedorPieza" class="pieza1" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      			<div class="contenedorPieza" class="pieza4" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      			<div class="contenedorPieza" class="pieza2" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
       		</div>
       	</section>
 
