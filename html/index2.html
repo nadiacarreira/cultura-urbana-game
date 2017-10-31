@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="../js/dragDop.js"></script>
+
+  <body onload="comprobarnavegador();">
+    <section class="col-md-2 columnGame">
+        <article class="infoColumn">
+
+          <article class="countDown">
+            <p id="timmerDown">60</p>
+          </article>
+
+          <article class="">
+            <p>Has acertado:</p>
+            <p id="score">0</p>
+          </article>
+
+        <article class="start">
+          <span id="time"></span><button type="button" class="btn btn-success">Start Game</button>
+        </article>
+        
+      </section>
+
+      	<section id="contenedorPuzzle" class="content">
+      		<div id="contenedorPiezas pieces" class="pieces" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+      			<img id="pieza3" src="../images/pieces/bigBen.png" class="bigBen" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      			<img id="pieza2" src="../images/pieces/sanPaul.png" class="santPaul" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      			<img id="pieza4" src="../images/pieces/bridge.png" class="bidge" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      			<img id="pieza1" src="../images/pieces/buckinham.png" class="buckinham" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      		</div>
+
+      		<div id="puzzle silhouettes" class="silhouettes">
+      			<div class="contenedorPieza bigBen" id="uno" class="bigBen" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      			<div class="contenedorPieza santPaul" id="dos" class="santPaul"  ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      			<div class="contenedorPieza bidge" id="tres" class="bidge" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      			<div class="contenedorPieza buckinham" id="cuatro" class="buckinham" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      		</div>
+      	</section>
+
+  </body>
+</html>

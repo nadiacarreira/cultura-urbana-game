@@ -1,0 +1,93 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.content{
+  width: 1200px;
+  height: 800px;
+  background: #ffffff url("../images/mapaFinal.png") no-repeat;
+}
+
+/*menu lateral: button start, tiempo y score*/
+.columnGame{
+  float: right;
+  text-align: center;
+}
+.infoColumn{
+  margin-top: 5px;
+  padding: 15px;
+  text-align: center;
+  background: white;
+}
+#timmerDown{
+  font-size: 2em;
+}
+.btn-success{
+  margin-bottom: 20px;
+}
+
+
+
+/*piezes para mover*/
+
+.pieces{
+  width: 200px;
+  position: absolute;
+  top: 208px;
+  left: 85%;
+  text-align: center;
+}
+.pieces>img{
+  margin-bottom: 10px;
+}
+
+/*position de las siluetas*/
+
+.silhouettes{
+  position: relative;
+}
+.silhouettes>img{
+  position: absolute;
+}
+.silhouettes .bigBen{
+  top: 450px;
+  left: 40%;
+  background:url("../images/silhouette/silhouetteBigben.png") no-repeat;
+  width: 56px;
+  height: 209px;
+  position: absolute;
+}
+
+.silhouettes .buckinham{
+  top: 130px;
+  left: 9.5%;
+  width: 289px;
+  height: 96px;
+  position: absolute;
+  background:url("../images/silhouette/silouetteBuckinham.png") no-repeat;
+
+}
+
+.silhouettes .bidge{
+  top: 350px;
+  left: 83%;
+  width: 185px;
+  height: 133px;
+  position: absolute;
+  background:url("../images/silhouette/silouettebidge.png") no-repeat;
+
+}
+
+.silhouettes .santPaul{
+  top: 50px;
+  left: 60%;
+  position: absolute;
+  width: 185px;
+  height: 142px;
+  background:url("../images/silhouette/silouetteSanPaul.png") no-repeat;
+
+}
+
+
+/*tooltips de los points*/

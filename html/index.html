@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+
+  <body>
+    <section class="col-md-2 columnGame">
+        <article class="infoColumn">
+
+          <article class="countDown">
+            <p id="timmerDown">60</p>
+          </article>
+
+          <article class="">
+            <p>Has acertado:</p>
+            <p id="score">0</p>
+          </article>
+
+        <article class="start">
+          <span id="time"></span><button type="button" class="btn btn-success">Start Game</button>
+        </article>
+
+      </section>
+
+    <div class="content">
+      <div id="silhouettes" class="silhouettes">
+        <img src="../images/silhouette/silhouetteBigben.png" class="bigBen" alt="Silueta Big Ben">
+        <img src="../images/silhouette/silouetteSanPaul.png" class="santPaul" alt="Silueta Sant Paul">
+        <img src="../images/silhouette/silouettebidge.png" class="bidge" alt="Silueta Bidge">
+        <img src="../images/silhouette/silouetteBuckinham.png" class="buckinham" alt="Silueta Buckinham">
+      </div>
+    </div>
+    <div id="pieces" class="pieces">
+      <img src="../images/pieces/bigBen.png" class="bigBen" alt="Big Ben">
+      <img src="../images/pieces/sanPaul.png" class="santPaul" alt="Sant Paul">
+      <img src="../images/pieces/bridge.png" class="bidge" alt="Bigde">
+      <img src="../images/pieces/buckinham.png" class="buckinham" alt="Buckinham">
+    </div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="../js/gamePiece.js"></script>
+<script src="../js/main.js"></script>
+  </body>
+</html>
