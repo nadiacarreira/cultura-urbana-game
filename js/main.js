@@ -4,22 +4,14 @@ window.onload = function() {
   };
 }
 function startGame(){
-  var silhouette = new silhouette();
-  var piezes = new piezes();
+  var count = 60;
+  var number = document.getElementById('number');
+  var intervalo = setInterval(function() {
+    count--;
+    number.innerHTML = count;
+    if (count == 0) {
+      clearInterval(intervalo);
+      alert("No te desanimes, ¡Vuelve a intentarlo!");
+    }
+  }, 1000);
 }
-
-
-
-//time set interval
-function countDown(i, callback) {
-    callback = callback || function(){};
-    var int = setInterval(function() {
-        document.getElementById("time").innerHTML = "Down time: " + i;
-        i-- || (clearInterval(int), callback());
-    }, 1000);
-}
-$("button").click(function(){
-    countDown(60, function(){
-        alert("Countdown done!")
-    });
-});

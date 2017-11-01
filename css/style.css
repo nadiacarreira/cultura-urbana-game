@@ -45,6 +45,7 @@ body{
   margin-bottom: 10px;
 }
 
+
 /*position of silhouettes*/
 
 #one{
@@ -122,3 +123,28 @@ body{
   left: 45%;
   display: inline-block;
 }
+
+/*Custom Alert*/
+
+#dialogoverlay{
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+#dialogbox{
+  display: none;
+  position: fixed;
+  background: #6D634D;
+  border-radius: 7px;
+  width: 550px;
+  z-index: 10;
+}
+#dialogbox>div{background: #fff; margin:8px;}
+#dialogbox>div>#dialogboxhead{background: #A5CBC4; font-size: 19px; padding: 10px; color: #6D634D;}
+#dialogbox>div>#dialogboxbody{background: #A5CBC4; padding: 20px; color:#6D634D;}
+#dialogbox>div>#dialogboxfoot{background: #C9C65E; padding: 10px; text-align: right;}
