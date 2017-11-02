@@ -9,6 +9,27 @@ body{
   margin: 0;
   background: #ffffff url("../images/background/finalMap.png") no-repeat;
 }
+/*portada*/
+.cover{
+  display: block;
+  margin: 30px auto;
+}
+
+.btn-block {
+    display: block;
+    margin: 30px auto;
+    width: 40%;
+    background: #F2C50A;
+}
+.btn-block a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn-block:hover{
+  background: #322821;
+
+}
 
 /*score, time and menu*/
 .columnGame{
@@ -27,8 +48,9 @@ body{
 .btn-success{
   margin-bottom: 20px;
 }
-
-
+.columnGame p{
+  font-size: 1.5em;
+}
 
 /*pieces to move*/
 
@@ -128,6 +150,25 @@ body{
   top: 190px;
   left: 45%;
   display: inline-block;
+}
+/*slider*/
+
+.col-md-3 img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.d-block{
+  width: 90%;
+  margin: 0 auto;
+  filter: grayscale(100%);
+}
+
+.img-fluid {
+  width: 100%;
+}
+.carousel-item p{
+  background: white;
 }
 
 /*Custom Alert*/

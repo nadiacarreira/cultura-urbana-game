@@ -1,3 +1,5 @@
+var currentScore;
+
 /*Función que se ejecuta al arrastrar el elemento.*/
 function start(e) {
   e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
@@ -32,7 +34,12 @@ function drop(e) {
 
   if (checkCorrectPiece(dragableElemet, $(e.target).attr('id'))) {
     e.target.appendChild(document.getElementById(dragableElemet));
+    //añadimos score
+    var currentScore = parseInt(document.getElementById('score').innerHTML);
+    document.getElementById('score').innerHTML = currentScore + 1;
+    checkCorrectPoints();
   } // Coloca el elemento soltado sobre el elemento desde el que se llamo esta funcions
+
 }
 
 function checkCorrectPiece(dragableElemet, target) {
@@ -45,10 +52,3 @@ function checkCorrectPiece(dragableElemet, target) {
     default: return false; break;
   }
 }
-
-function checkCorrectPoints(checkCorrectPiece){
-  if(checkCorrectPiece === 4){
-    console.log(alert("you win"));
-  }
-}
-checkCorrectPoints();
