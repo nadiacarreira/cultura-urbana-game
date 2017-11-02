@@ -10,54 +10,63 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/dragDrop.js"></script>
-<script src="../js/gameStart.js"></script>
 <!-- <script src="../js/CustomAlert.js"></script> -->
 
 <body>
+<div class="points">
+  <img src="../images/infoMonument/points.png" alt="Point">
+  <span class="pointstext">
+      <img src="../images/infoMonument/tooltipBigBen.png" alt="Big Ben">
+    </span>
+</div>
+<div class="points1">
+  <img src="../images/infoMonument/points.png" alt="Point">
+  <span class="pointstext">
+      <img src="../images/infoMonument/tooltipBuckinham.png" alt="Buckinham">
+    </span>
+</div>
+<div class="points2">
+  <img src="../images/infoMonument/points.png" alt="Point">
+  <span class="pointstext">
+      <img src="../images/infoMonument/tooltipBridgeLondon.png" alt="Bridge London">
+    </span>
+</div>
+<div class="points3">
+  <img src="../images/infoMonument/points.png" alt="Point">
+  <span class="pointstext">
+      <img src="../images/infoMonument/tooltipSantPaul.png" alt="Sant Paul">
+    </span>
+</div>
 
-  <div class="points"><img src="../images/infoMonument/points.png" alt="Point">
-    <span class="pointstext"><img src="../images/infoMonument/tooltipBigBen.png" alt="Big Ben"></span>
-  </div>
-  <div class="points1"><img src="../images/infoMonument/points.png" alt="Point">
-    <span class="pointstext"><img src="../images/infoMonument/tooltipBuckinham.png" alt="Buckinham"></span>
-  </div>
-  <div class="points2"><img src="../images/infoMonument/points.png" alt="Point">
-    <span class="pointstext"><img src="../images/infoMonument/tooltipBridgeLondon.png" alt="Bridge London"></span>
-  </div>
-  <div class="points3"><img src="../images/infoMonument/points.png" alt="Point">
-    <span class="pointstext"><img src="../images/infoMonument/tooltipSantPaul.png" alt="Sant Paul"></span>
-  </div>
+<section class="col-md-2 columnGame">
+  <article class="infoColumn">
 
-  <section class="col-md-2 columnGame">
-    <article class="infoColumn">
+    <article class="countDown">
+      <p id="number">60</p>
+    </article>
 
-      <article class="countDown">
-        <p id="number">60</p>
-      </article>
+    <article class="">
+      <p>Has acertado:</p>
+      <p id="score">0</p>
+    </article>
 
-      <article class="">
-        <p>Has acertado:</p>
-        <p id="score">0</p>
-      </article>
-
-      <article class="start">
-        <button id="start-button" onclick="startGame()" type="button" class="btn btn-success">Start Game</button>
-      </article>
-
-  </section>
+    <article class="start">
+      <button id="start-button" onclick="startGame()" type="button" class="btn btn-success">Start Game</button>
+    </article>
+</section>
 
   <section id="containerPuzzle">
     <div id="containerPieces" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
-      <img id="bigBen" class="bigBen" src="../images/pieces/bigBen.png" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-      <img id="santPaul" src="../images/pieces/sanPaul.png" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-      <img id="bridge" class="bridge" src="../images/pieces/bridge.png" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-      <img id="buckinham" class="buckinham" src="../images/pieces/buckinham.png" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      <img id="bigBen"    src="../images/pieces/bigBen.png"    alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      <img id="santPaul"  src="../images/pieces/sanPaul.png"   alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      <img id="bridge"    src="../images/pieces/bridge.png"    alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      <img id="buckinham" src="../images/pieces/buckinham.png" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
     </div>
     <div id="puzzle">
-      <div class="containerPiece" class="bridge" id="one" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-      <div class="containerPiece" class="bigBen" id="two" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-      <div class="containerPiece" class="buckinham" id="three" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-      <div class="containerPiece" class="santPaul" id="four" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      <div class="containerPiece" id="one"      ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      <div class="containerPiece" id="two"      ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      <div class="containerPiece" id="three"    ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      <div class="containerPiece" id="four"     ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
     </div>
   </section>
 
