@@ -45,3 +45,10 @@ function checkCorrectPiece(dragableElemet, target) {
     default: return false; break;
   }
 }
+
+function checkCorrectPoints(checkCorrectPiece){
+  if(checkCorrectPiece === 4){
+    console.log(alert("you win"));
+  }
+}
+checkCorrectPoints();

@@ -3,15 +3,16 @@ window.onload = function() {
     startGame();
   };
 }
+
 function startGame(){
-  var count = 60;
+  var count = 61;
   var number = document.getElementById('number');
   var intervalo = setInterval(function() {
     count--;
     number.innerHTML = count;
     if (count == 0) {
       clearInterval(intervalo);
-      alert("No te desanimes, ¡Vuelve a intentarlo!");
+      ShowDialog();
     }
   }, 1000);
 }

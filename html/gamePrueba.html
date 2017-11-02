@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+  </style>
+  <script type="text/javascript">
+    function Game(checkCorrectPiece, count, score) {
+      this.checkCorrectPiece = checkCorrectPiece;
+      this.score = 0;
+      this.count = 60;
+    }
+
+    Game.prototype.startGame = function(checkCorrectPiece, count) {
+      checkCorrectPiece.checkCorrectPiece(checkCorrectPiece);
+      this.showScore();
+      this.showTimmer();
+    }
+
+    Game.prototype.showScore = function() {
+      $("#score").text(this.score)
+      console.log(this.score);
+    }
+
+    Game.prototype.countDown = function() {
+      var that = this;
+
+      var timmer = setInterval(function() {
+        that.win();
+        that.loose();
+        that.count--;
+        if (that.count <= 0) clearInterval(timmer)
+
+
+        that.showTimmer();
+      }, 1000)
+
+      this.count = 31;
+    }
+  </script>
+
+</head>
+
+<body>
+  <section class="col-md-2 text-center">
+    <article class="info">
+      <h1>PUZZLE xTINCTION</h1>
+      <p>Cómo jugar</p>
+      <p>"Lorizzle ipsum bling bling sit amizzle, consectetuer adipiscing elit. Nizzle sapien velizzle !"</p>
+    </article>
+    <article class="start">
+      <button class="btn btn-default btn-lg">JUGAR</button>
+    </article>
+    <article class="countDown">
+      <p id="timmerDown">10</p>
+      <p>CUENTA ATRÁS</p>
+    </article>
+    <article class="">
+      <p id="score">0</p>
+      <p>ACIERTOS</p>
+    </article>
+    <audio src="./src/we-did-it.mov"></audio>
+  </section>
+
+
+</body>
+
+</html>
